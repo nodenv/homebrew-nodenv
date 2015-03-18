@@ -11,6 +11,9 @@ class Nodenv < Formula
   def caveats; <<-EOS.undent
     To enable shims and autocompletion add to your profile:
       if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
+
+    To use Homebrew's directories rather than ~/.nodenv add to your profile:
+      export NODENV_ROOT=#{opt_prefix}/nodenv
     EOS
   end
 end
