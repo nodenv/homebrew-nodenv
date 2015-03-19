@@ -2,7 +2,7 @@ class Nodenv < Formula
   homepage "https://github.com/OiNutter/nodenv"
   head "https://github.com/OiNutter/nodenv.git"
   url "https://github.com/OiNutter/nodenv/archive/v0.2.0.tar.gz"
-  sha1 "ce66e6a546ad92b166c4133796df11cd9fbbbd5f"
+  sha256 "3e0c8f81407741ac4b8ca4a07e03269e13ff00e15057f8fbdf0a195068043b60"
 
   def install
     prefix.install "bin", "libexec"
