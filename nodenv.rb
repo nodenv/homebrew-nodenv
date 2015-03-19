@@ -16,4 +16,8 @@ class Nodenv < Formula
       export NODENV_ROOT=#{opt_prefix}/nodenv
     EOS
   end
+
+  test do
+    shell_output("eval \"$(#{bin}/nodenv init -)\" && nodenv versions")
+  end
 end
