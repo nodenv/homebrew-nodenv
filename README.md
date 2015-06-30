@@ -1,6 +1,6 @@
 # Homebrew-nodenv
 
-This tap provides Homebrew formulae for OiNutter's version of [nodenv](https://github.com/OiNutter/nodenv) and its plugins. This is an alternative to [wfarr's version](https://github.com/wfarr/nodenv), which is currently available through Homebrew's main repository but has not been actively maintained for some time.
+This tap provides Homebrew formulae for OiNutter's version of [nodenv](https://github.com/OiNutter/nodenv) and its [plugins](https://github.com/OiNutter/nodenv/wiki/Plugins). This is an alternative to [wfarr's version](https://github.com/wfarr/nodenv), which is currently available through Homebrew's main repository but has not been actively maintained for some time.
 
 ## Installing Homebrew-nodenv Formulae
 Just `brew tap jawshooah/nodenv` and then `brew install <formula>`. You only need to tap the repository once.
