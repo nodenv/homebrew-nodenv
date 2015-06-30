@@ -1,8 +1,8 @@
 class NodenvAliases < Formula
   homepage "https://github.com/jasonkarns/nodenv-aliases"
   head "https://github.com/jasonkarns/nodenv-aliases.git"
-  url "https://github.com/jasonkarns/nodenv-aliases/archive/v1.0.0.tar.gz"
-  sha256 "968d61ba55f2e6b0b137f2d7b8765beeabb4d789d73d5c88a9c4dd559721eb25"
+  url "https://github.com/jasonkarns/nodenv-aliases/archive/v1.0.1.tar.gz"
+  sha256 "115e3f482bf0c07f134bdb5aec9c1b88f057f60d0b87f34025fed79630e783a2"
 
   depends_on "jawshooah/nodenv/nodenv"
 
