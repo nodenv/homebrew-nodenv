@@ -6,7 +6,7 @@ class Nodenv < Formula
 
   def install
     inreplace "libexec/nodenv", "/usr/local", HOMEBREW_PREFIX
-    prefix.install "bin", "libexec"
+    prefix.install Dir["*"]
   end
 
   def caveats; <<-EOS.undent
