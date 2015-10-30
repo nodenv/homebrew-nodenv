@@ -3,7 +3,6 @@ class Nodenv < Formula
   homepage "https://github.com/OiNutter/nodenv"
   url "https://github.com/OiNutter/nodenv/archive/v0.4.0.tar.gz"
   sha256 "bfbfb9de2177cf2418baf367b08e929459027cb8979419db7602929cb10e73bd"
-
   head "https://github.com/OiNutter/nodenv.git"
 
   def install

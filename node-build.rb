@@ -3,7 +3,6 @@ class NodeBuild < Formula
   homepage "https://github.com/OiNutter/node-build"
   url "https://github.com/OiNutter/node-build/archive/v2.0.0.tar.gz"
   sha256 "7526c26e824470ce3ff93e7c5b441ee9472526fb371277c439738fb03e6224e9"
-
   head "https://github.com/OiNutter/node-build.git"
 
   depends_on "autoconf" => [:recommended, :run]
