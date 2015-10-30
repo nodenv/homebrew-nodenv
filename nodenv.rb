@@ -1,9 +1,10 @@
 class Nodenv < Formula
+  desc "Manage multiple NodeJS versions"
   homepage "https://github.com/OiNutter/nodenv"
+  url "https://github.com/OiNutter/nodenv/archive/v0.4.0.tar.gz"
+  sha256 "bfbfb9de2177cf2418baf367b08e929459027cb8979419db7602929cb10e73bd"
+
   head "https://github.com/OiNutter/nodenv.git"
-  url "https://github.com/OiNutter/nodenv/archive/v0.3.0.tar.gz"
-  sha256 "f8486ce3a6bef589ec81ecd3db7e8154e52a126a58a2755a450c4a2300ae053f"
-  revision 1
 
   def install
     inreplace "libexec/nodenv", "/usr/local", HOMEBREW_PREFIX
