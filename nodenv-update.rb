@@ -1,17 +1,17 @@
 class NodenvUpdate < Formula
-  homepage "https://github.com/jawshooah/nodenv-update"
-  head "https://github.com/jawshooah/nodenv-update.git"
-  url "https://github.com/jawshooah/nodenv-update/archive/0.1.0.tar.gz"
-  sha256 "a77e4ffb4874aedc96e413191b1bdedb61c7c97b4006311b05957684ba5adeeb"
+  desc "Update nodenv plugins not installed with Homebrew"
+  homepage "https://github.com/charlesbjohnson/nodenv-update"
+  url "https://github.com/charlesbjohnson/nodenv-update/archive/v0.2.0.tar.gz"
+  sha256 "25c3297b9cc5428e67519fe70336000396db258046076fa89b6c5aa772964b74"
+  head "https://github.com/charlesbjohnson/nodenv-update.git"
 
-  depends_on "jawshooah/nodenv/nodenv"
+  depends_on "nodenv"
 
   def install
-    ENV["PREFIX"] = prefix
-    system "./install.sh"
+    prefix.install Dir["*"]
   end
 
   test do
-    assert shell_output("nodenv commands").include? "update"
+    assert_match /^update$/, shell_output("nodenv commands")
   end
 end
