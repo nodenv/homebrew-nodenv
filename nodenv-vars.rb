@@ -1,4 +1,5 @@
 class NodenvVars < Formula
+  desc "Set global and per-project environment variables"
   homepage "https://github.com/OiNutter/nodenv-vars"
   head "https://github.com/OiNutter/nodenv-vars.git"
 
@@ -9,6 +10,6 @@ class NodenvVars < Formula
   end
 
   test do
-    assert shell_output("nodenv hooks exec").include? "nodenv-vars.bash"
+    assert_match /nodenv-vars\.bash/, shell_output("nodenv hooks exec")
   end
 end
