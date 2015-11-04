@@ -1,6 +1,6 @@
 # Homebrew-nodenv
 
-This tap provides Homebrew formulae for OiNutter's version of [nodenv](https://github.com/OiNutter/nodenv) and its [plugins](https://github.com/OiNutter/nodenv/wiki/Plugins). This is an alternative to [wfarr's version](https://github.com/wfarr/nodenv), which is currently available through Homebrew's main repository but has not been actively maintained for some time.
+This tap provides Homebrew formulae for [plugins](https://github.com/OiNutter/nodenv/wiki/Plugins) extending [nodenv](https://github.com/OiNutter/nodenv).
 
 ## Installing Homebrew-nodenv Formulae
 Just `brew tap jawshooah/nodenv` and then `brew install <formula>`. You only need to tap the repository once.
@@ -10,10 +10,6 @@ You can also install via URL:
 ```
 brew install https://raw.githubusercontent.com/jawshooah/homebrew-nodenv/master/<formula>.rb
 ```
-
-### Installing nodenv
-The `nodenv` formula is a special case, since it conflicts with the one in Homebrew's main repository.
-Tap the repository as described above, then `brew install jawshooah/nodenv/nodenv`.
 
 ## Troubleshooting
 First, please run `brew update` and `brew doctor`.
