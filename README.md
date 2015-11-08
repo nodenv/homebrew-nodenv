@@ -22,5 +22,9 @@ Second, read the [Homebrew Troubleshooting Checklist](https://github.com/Homebre
 
 `brew help`, `man brew` or check the [Homebrew documentation](https://github.com/Homebrew/homebrew/tree/master/share/doc/homebrew#readme).
 
+## Contributing
+
+Have a look at the [Homebrew Formula Cookbook](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Formula-Cookbook.md).  In particular, your formula should pass `brew audit --strict <formula>` and `brew test <formula>`.
+
 ## License
 Code is under the [MIT license](https://github.com/jawshooah/homebrew-nodenv/tree/master/LICENSE.txt).
