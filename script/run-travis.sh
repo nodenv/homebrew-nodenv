@@ -21,7 +21,7 @@ main () {
 }
 
 tap_repo () {
-  brew tap --depth=1 "$tap" "file://$PWD"
+  brew tap "$tap" "file://$PWD"
 }
 
 untap_repo () {
