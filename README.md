@@ -1,5 +1,7 @@
 # Homebrew-nodenv
 
+[![Build Status](https://img.shields.io/travis/jawshooah/homebrew-nodenv/master.svg)](https://travis-ci.org/jawshooah/homebrew-nodenv)
+
 This tap provides Homebrew formulae for [plugins](https://github.com/OiNutter/nodenv/wiki/Plugins) extending [nodenv](https://github.com/OiNutter/nodenv).
 
 ## Installing Homebrew-nodenv Formulae
