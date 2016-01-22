@@ -1,16 +1,16 @@
 # Homebrew-nodenv
 
-[![Build Status](https://img.shields.io/travis/jawshooah/homebrew-nodenv/master.svg)](https://travis-ci.org/jawshooah/homebrew-nodenv)
+[![Build Status](https://img.shields.io/travis/nodenv/homebrew-nodenv/master.svg)](https://travis-ci.org/nodenv/homebrew-nodenv)
 
-This tap provides Homebrew formulae for [plugins](https://github.com/OiNutter/nodenv/wiki/Plugins) extending [nodenv](https://github.com/OiNutter/nodenv).
+This tap provides Homebrew formulae for [plugins](https://github.com/nodenv/nodenv/wiki/Plugins) extending [nodenv](https://github.com/nodenv/nodenv).
 
 ## Installing Homebrew-nodenv Formulae
-Just `brew tap jawshooah/nodenv` and then `brew install <formula>`. You only need to tap the repository once.
+Just `brew tap nodenv/nodenv` and then `brew install <formula>`. You only need to tap the repository once.
 
 You can also install via URL:
 
 ```
-brew install https://raw.githubusercontent.com/jawshooah/homebrew-nodenv/master/<formula>.rb
+brew install https://raw.githubusercontent.com/nodenv/homebrew-nodenv/master/<formula>.rb
 ```
 
 ## Troubleshooting
@@ -29,4 +29,4 @@ Second, read the [Homebrew Troubleshooting Checklist](https://github.com/Homebre
 Have a look at the [Homebrew Formula Cookbook](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Formula-Cookbook.md).  In particular, your formula should pass `brew audit --strict <formula>` and `brew test <formula>`.
 
 ## License
-Code is under the [MIT license](https://github.com/jawshooah/homebrew-nodenv/tree/master/LICENSE.txt).
+Code is under the [MIT license](https://github.com/nodenv/homebrew-nodenv/tree/master/LICENSE.txt).
