@@ -1,8 +1,8 @@
 class NodeBuildUpdateDefs < Formula
   desc "Scrape build definitions from nodejs.org and iojs.org"
   homepage "https://github.com/nodenv/node-build-update-defs"
-  url "https://github.com/nodenv/node-build-update-defs/archive/v1.0.0.tar.gz"
-  sha256 "a17534fa793cdb9a7c75f75602ee2e3337799c3c8326000b8ceed5d77d8e8429"
+  url "https://github.com/nodenv/node-build-update-defs/archive/v2.0.0.tar.gz"
+  sha256 "0655bfeeae8873583f51c2d9478a8370620bbd8982c4013780bd2b463f83f32a"
   head "https://github.com/nodenv/node-build-update-defs.git"
 
   depends_on "nodenv"
