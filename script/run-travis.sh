@@ -3,6 +3,7 @@
 set -o errexit
 set -o errtrace
 set -o nounset
+shopt -s nullglob
 
 tap='travis-tmp/nodenv'
 formula=''
