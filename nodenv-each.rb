@@ -1,8 +1,8 @@
 class NodenvEach < Formula
   desc "Run a command against all installed versions of Node"
   homepage "https://github.com/nodenv/nodenv-each"
-  url "https://github.com/nodenv/nodenv-each/archive/v1.0.0.tar.gz"
-  sha256 "a6e32cfc029407d92dc9d193037a647247ed65ead9187ffaf953abacf8b6b94e"
+  url "https://github.com/nodenv/nodenv-each/archive/v1.1.0.tar.gz"
+  sha256 "b398dabc5569f084b64b1daa377c5fd7ae508a166c5583f9eace00a6aeadf029"
   head "https://github.com/nodenv/nodenv-each.git"
 
   depends_on "nodenv"
