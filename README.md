@@ -1,6 +1,6 @@
 # Homebrew-nodenv
 
-[![Build Status](https://img.shields.io/travis/nodenv/homebrew-nodenv/master.svg)](https://travis-ci.org/nodenv/homebrew-nodenv)
+[![Build Status](https://travis-ci.org/nodenv/homebrew-nodenv.svg?branch=master)](https://travis-ci.org/nodenv/homebrew-nodenv)
 
 This tap provides Homebrew formulae for [plugins](https://github.com/nodenv/nodenv/wiki/Plugins) extending [nodenv](https://github.com/nodenv/nodenv).
 
