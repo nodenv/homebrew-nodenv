@@ -10,6 +10,10 @@ class NodenvPackageRehash < Formula
   def install
     prefix.install Dir["*"]
   end
+  
+  def post_install
+    system "nodenv", "package-hooks", "install", "--all"
+  end
 
   test do
     assert_match /^package-hooks$/, shell_output("nodenv commands")
