@@ -1,8 +1,8 @@
 class NodenvAliases < Formula
   desc "Create aliases for nodenv Node versions"
   homepage "https://github.com/nodenv/nodenv-aliases"
-  url "https://github.com/nodenv/nodenv-aliases/archive/v1.1.2.tar.gz"
-  sha256 "1c1892076fd14f0d0a0656ad0a481855d59511704c74daa3169d80be1164e144"
+  url "https://github.com/nodenv/nodenv-aliases/archive/v2.0.0.tar.gz"
+  sha256 "f96970e909cd682a2279cf19cb4c1311bc49a9e780fc347de379b1418cc49c69"
   head "https://github.com/nodenv/nodenv-aliases.git"
 
   depends_on "nodenv"
