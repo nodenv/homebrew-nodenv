@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+set -euxo pipefail
+IFS=$'\n\t'
+
 set -o errexit
 set -o errtrace
 set -o nounset
