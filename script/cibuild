@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-set -x
+set -euxo pipefail
+IFS=$'\n\t'
 
 set -o errexit
 set -o errtrace
