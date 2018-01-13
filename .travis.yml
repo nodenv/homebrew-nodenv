@@ -11,4 +11,4 @@ before_install:
 install:
   - brew install nodenv
 script:
-  - bash -x script/run-travis.sh
+  - bash -x script/cibuild
