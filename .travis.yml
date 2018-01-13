@@ -10,4 +10,4 @@ before_install: brew update
 
 install: brew install nodenv
 
-script: bash -x script/cibuild
+script: script/cibuild
