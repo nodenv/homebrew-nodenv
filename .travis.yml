@@ -1,7 +1,4 @@
-language: ruby
 os: osx
-osx_image: xcode8.1
-rvm: system
 
 branches:
   only: master
