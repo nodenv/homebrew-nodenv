@@ -7,7 +7,7 @@ class NodeBuildPrerelease < Formula
 
   bottle :unneeded
 
-  depends_on "node-build" => :recommended
+  depends_on "node-build"
 
   def install
     ENV["PREFIX"] = prefix
