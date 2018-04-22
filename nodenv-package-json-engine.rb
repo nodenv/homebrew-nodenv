@@ -1,8 +1,8 @@
 class NodenvPackageJsonEngine < Formula
   desc "Pick a node version from package.json engines"
   homepage "https://github.com/nodenv/nodenv-package-json-engine"
-  url "https://github.com/nodenv/nodenv-package-json-engine/archive/v1.1.1.tar.gz"
-  sha256 "6ac9423aa9ea2c604ba6b70a47cfa84b3c8a595572e8ff67d3afa3ba504491e2"
+  url "https://github.com/nodenv/nodenv-package-json-engine/archive/v3.0.0.tar.gz"
+  sha256 "571e355875b245c4e767ecc1dc218f762d8101f77ac8d7ceb183162646cd67b9"
   head "https://github.com/nodenv/nodenv-package-json-engine.git"
 
   depends_on "nodenv"
@@ -12,6 +12,6 @@ class NodenvPackageJsonEngine < Formula
   end
 
   test do
-    assert_match /\bpackage-json-engine\b/, shell_output("nodenv hooks which")
+    assert_match /\bpackage-json-engine\b/, shell_output("nodenv hooks version-name")
   end
 end
