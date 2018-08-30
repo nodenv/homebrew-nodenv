@@ -1,8 +1,8 @@
 class NodenvPackageJsonEngine < Formula
   desc "Pick a node version from package.json engines"
   homepage "https://github.com/nodenv/nodenv-package-json-engine"
-  url "https://github.com/nodenv/nodenv-package-json-engine/archive/v3.0.1.tar.gz"
-  sha256 "96b0c5878dd47bf0d964d1fa06dfbb7353a321cab4f4bc1401d0d895406877ce"
+  url "https://github.com/nodenv/nodenv-package-json-engine/archive/v3.0.2.tar.gz"
+  sha256 "ff9b8dcfbfbe9fd57c33874d560c221d4fcb78dcec33796cf9b08152a32790be"
   head "https://github.com/nodenv/nodenv-package-json-engine.git"
 
   depends_on "nodenv"
