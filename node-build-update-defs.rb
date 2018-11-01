@@ -5,8 +5,8 @@ class NodeBuildUpdateDefs < Formula
   sha256 "e1a0b5e5c68d48cd5cff46dc6e196dfbb04369ff711ae1287679a580449ee30d"
   head "https://github.com/nodenv/node-build-update-defs.git"
 
-  depends_on "nodenv"
   depends_on "node-build"
+  depends_on "nodenv"
 
   def install
     mv "lib", "src"
