@@ -1,8 +1,5 @@
 os: osx
 
-branches:
-  only: master
-
 before_install: brew update
 
 install: brew install nodenv
