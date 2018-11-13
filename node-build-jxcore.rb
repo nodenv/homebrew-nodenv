@@ -1,8 +1,8 @@
 class NodeBuildJxcore < Formula
   desc "Install JXCore versions"
   homepage "https://github.com/nodenv/node-build-jxcore"
-  url "https://github.com/nodenv/node-build-jxcore/archive/v1.0.1.tar.gz"
-  sha256 "8c323cfc8997480ddf5a6785967cfe79a90f97cff83401b5fe478bf6f738b1a4"
+  url "https://github.com/nodenv/node-build-jxcore/archive/v1.0.0.tar.gz"
+  sha256 "1ddd794d88abf9916b6947653e3f39a9388bb86c6ffa8e03facff729f17e1f89"
   head "https://github.com/nodenv/node-build-jxcore.git"
 
   bottle :unneeded
