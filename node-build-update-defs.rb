@@ -14,7 +14,16 @@ class NodeBuildUpdateDefs < Formula
     prefix.install Dir["*"]
   end
 
+  def caveats
+    <<~MSG
+      For `node-build`/`nodenv install` to pick up definitions written by this plugin,
+      ensure '#{share/"node-build"}' exists in NODE_BUILD_DEFINITIONS.
+
+          export NODE_BUILD_DEFINITIONS="#{share/"node-build"}"
+    MSG
+  end
+
   test do
-    assert_match /^update-version-defs$/, shell_output("nodenv commands")
+    assert_match(/^update-version-defs$/, shell_output("nodenv commands"))
   end
 end
