@@ -14,6 +14,15 @@ class NodeBuildJxcore < Formula
     system "./install.sh"
   end
 
+  def caveats
+    <<~MSG
+      For `node-build`/`nodenv install` to pick up definitions provided by this plugin,
+      ensure '#{share/"node-build"}' exists in NODE_BUILD_DEFINITIONS.
+
+          export NODE_BUILD_DEFINITIONS="#{share/"node-build"}"
+    MSG
+  end
+
   test do
     system "ls", "#{share}/node-build"
   end
