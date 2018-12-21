@@ -11,6 +11,15 @@ class NodenvPackageRehash < Formula
     prefix.install Dir["*"]
   end
 
+  def caveats
+    <<~MSG
+      Speed up your shell initialization!
+      With this plugin now installed, you can (optionally) configure nodenv to skip rehashing on shell startup.
+      In your shell startup file (.bash_profile, .bashrc or .zshrc), add `--no-rehash` to the `nodenv init` line.
+          eval "$(nodenv init - --no-rehash)"
+    MSG
+  end
+
   test do
     assert_match /^package-hooks$/, shell_output("nodenv commands")
   end
