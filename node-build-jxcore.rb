@@ -17,8 +17,7 @@ class NodeBuildJxcore < Formula
   def caveats
     <<~MSG
       For `node-build`/`nodenv install` to pick up definitions provided by this plugin,
-      ensure '#{share/"node-build"}' exists in NODE_BUILD_DEFINITIONS.
-
+      ensure directory exists in NODE_BUILD_DEFINITIONS:
           export NODE_BUILD_DEFINITIONS="#{share/"node-build"}"
     MSG
   end
