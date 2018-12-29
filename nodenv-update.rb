@@ -1,8 +1,8 @@
 class NodenvUpdate < Formula
   desc "Update nodenv plugins not installed with Homebrew"
   homepage "https://github.com/charlesbjohnson/nodenv-update"
-  url "https://github.com/charlesbjohnson/nodenv-update/archive/v0.2.0.tar.gz"
-  sha256 "25c3297b9cc5428e67519fe70336000396db258046076fa89b6c5aa772964b74"
+  url "https://github.com/nodenv/nodenv-update/archive/v1.0.0.tar.gz"
+  sha256 "336b3d51a0e414992f4dcf46a4fa23ebd3e6640543704288ed73121256f66174"
   head "https://github.com/charlesbjohnson/nodenv-update.git"
 
   depends_on "nodenv"
