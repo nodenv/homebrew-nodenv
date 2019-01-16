@@ -4,6 +4,8 @@
 
 This tap provides Homebrew formulae for [plugins](https://github.com/nodenv/nodenv/wiki/Plugins) extending [nodenv](https://github.com/nodenv/nodenv).
 
+<!-- toc -->
+
 ## Installing Homebrew-nodenv Formulae
 Just `brew tap nodenv/nodenv` and then `brew install <formula>`. You only need to tap the repository once.
 
