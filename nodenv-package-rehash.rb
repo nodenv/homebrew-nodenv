@@ -1,8 +1,8 @@
 class NodenvPackageRehash < Formula
   desc "Automatically runs `nodenv rehash`"
   homepage "https://github.com/nodenv/nodenv-package-rehash"
-  url "https://github.com/nodenv/nodenv-package-rehash/archive/v1.2.2.tar.gz"
-  sha256 "f4ad87f98a67783a81f22f0c4023ada870c1bf15b417f1fb3a0706d35b58e091"
+  url "https://github.com/nodenv/nodenv-package-rehash/archive/v1.3.0.tar.gz"
+  sha256 "10733c90b8b84b28deea559f3ab68fc1193fd6fef6926e1fd06586dd6b330a7c"
   head "https://github.com/nodenv/nodenv-package-rehash.git"
 
   depends_on "nodenv"
