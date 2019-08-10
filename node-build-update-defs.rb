@@ -9,8 +9,6 @@ class NodeBuildUpdateDefs < Formula
   depends_on "nodenv"
 
   def install
-    mv "lib", "src"
-    inreplace Dir["libexec/*"], "../lib", "../src"
     prefix.install Dir["*"]
   end
 
