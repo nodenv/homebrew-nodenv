@@ -1,7 +1,0 @@
-os: osx
-
-before_install: brew update
-
-install: brew install nodenv
-
-script: script/cibuild
