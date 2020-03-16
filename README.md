@@ -1,7 +1,5 @@
 # nodenv/homebrew
 
-[![Build Status](https://travis-ci.org/nodenv/homebrew-nodenv.svg?branch=master)](https://travis-ci.org/nodenv/homebrew-nodenv)
-
 This is a [Homebrew Tap](https://docs.brew.sh/Taps) providing formulae for [plugins](https://github.com/nodenv/nodenv/wiki/Plugins) extending [nodenv](https://github.com/nodenv/nodenv).
 
 <!-- toc -->
