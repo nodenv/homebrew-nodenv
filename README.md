@@ -4,11 +4,8 @@ This is a [Homebrew Tap](https://docs.brew.sh/Taps) providing formulae for [plug
 
 <!-- toc -->
 
-- [Installing Homebrew-nodenv Formulae](#installing-homebrew-nodenv-formulae)
-- [Troubleshooting](#troubleshooting)
-- [More Documentation](#more-documentation)
-- [Contributing](#contributing)
-- [License](#license)
+- [How do I install these formulae?](#how-do-i-install-these-formulae)
+- [Documentation](#documentation)
 
 <!-- tocstop -->
 
