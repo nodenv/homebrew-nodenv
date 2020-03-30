@@ -10,7 +10,8 @@ inputs:
     required: true
   formula:
     description: Formula name (for example "unzip" or "user/tap/formula")
-    required: true
+    required: false
+    default: ${{ github.repository }}
   tap:
     description: Tap name
     required: false

@@ -5,7 +5,7 @@ set -e
 actor="$GITHUB_ACTOR"
 
 token="$INPUT_TOKEN"
-formula="$INPUT_FORMULA"
+formula="${INPUT_FORMULA#*/}"
 tap="$INPUT_TAP"
 url="$INPUT_URL"
 mirror="$INPUT_MIRROR"
