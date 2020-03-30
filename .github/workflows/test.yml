@@ -1,11 +1,16 @@
 name: Test
-on: push
+on: [push, pull_request]
 
 jobs:
-  test:
+  lint:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
     - run: brew audit --strict Formula/*
+
+  test:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
     - run: brew install Formula/*
     - run: brew test Formula/*
