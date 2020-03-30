@@ -1,0 +1,34 @@
+name: Homebrew bump formula
+description: Bump (update) a Homebrew formula on new project release
+author: dawidd6
+branding:
+  icon: arrow-up-circle
+  color: yellow
+inputs:
+  token:
+    description: Github token (not the default one)
+    required: true
+  formula:
+    description: Formula name (for example "unzip" or "user/tap/formula")
+    required: true
+  url:
+    description: URL to download source archive
+    required: false
+  mirror:
+    description: URL to download source archive (mirror)
+    required: false
+  sha256:
+    description: Source archive SHA256 checksum
+    required: false
+  tag:
+    description: Git tag
+    required: false
+  revision:
+    description: Git revision
+    required: false
+  force:
+    description: Check open PRs or not
+    required: false
+runs:
+  using: docker
+  image: Dockerfile
