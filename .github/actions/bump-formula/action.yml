@@ -11,6 +11,10 @@ inputs:
   formula:
     description: Formula name (for example "unzip" or "user/tap/formula")
     required: true
+  tap:
+    description: Tap name
+    required: false
+    default: nodenv/nodenv
   url:
     description: URL to download source archive
     required: false

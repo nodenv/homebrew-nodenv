@@ -6,6 +6,7 @@ actor="$GITHUB_ACTOR"
 
 token="$INPUT_TOKEN"
 formula="$INPUT_FORMULA"
+tap="$INPUT_TAP"
 url="$INPUT_URL"
 mirror="$INPUT_MIRROR"
 sha256="$INPUT_SHA256"
@@ -99,6 +100,9 @@ brew update-reset
 
 if test "$(echo $formula | grep -o / | wc -l)" -eq 2; then
     tap="$(echo $formula | cut -d/ -f1-2)"
+fi
+
+if test -n "$tap"; then
     brew tap "$tap"
 fi
 
