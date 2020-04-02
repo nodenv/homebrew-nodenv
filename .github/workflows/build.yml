@@ -1,0 +1,21 @@
+name: Build
+on: push
+  # push:
+  #   branches: master
+
+jobs:
+  json:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: brew info --json
+      run: |
+        rm -rf Info
+        mkdir -p Info
+        cd Formula
+        for formula in *.rb; do
+          brew info --json "$formula" > ../Info/${formula/%rb/json}
+        done
+
+    - run: cat Formula/*
