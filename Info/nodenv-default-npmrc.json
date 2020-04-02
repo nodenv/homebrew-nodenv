@@ -1,0 +1,37 @@
+{
+  "name": "nodenv-default-npmrc",
+  "full_name": "nodenv-default-npmrc",
+  "oldname": null,
+  "aliases": [],
+  "versioned_formulae": [],
+  "desc": "Automatically installs a root npmrc for each node version",
+  "homepage": "https://github.com/deiga/nodenv-default-npmrc",
+  "versions": {
+    "stable": "1.0.0",
+    "devel": null,
+    "head": null,
+    "bottle": false
+  },
+  "urls": {},
+  "revision": 0,
+  "version_scheme": 0,
+  "bottle": {},
+  "keg_only": false,
+  "bottle_disabled": false,
+  "options": [],
+  "build_dependencies": [],
+  "dependencies": [
+    "node-build",
+    "nodenv"
+  ],
+  "recommended_dependencies": [],
+  "optional_dependencies": [],
+  "uses_from_macos": [],
+  "requirements": [],
+  "conflicts_with": [],
+  "caveats": null,
+  "installed": [],
+  "linked_keg": null,
+  "pinned": false,
+  "outdated": false
+}

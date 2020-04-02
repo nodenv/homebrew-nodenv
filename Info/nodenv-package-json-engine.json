@@ -1,0 +1,36 @@
+{
+  "name": "nodenv-package-json-engine",
+  "full_name": "nodenv-package-json-engine",
+  "oldname": null,
+  "aliases": [],
+  "versioned_formulae": [],
+  "desc": "Pick a node version from package.json engines",
+  "homepage": "https://github.com/nodenv/nodenv-package-json-engine",
+  "versions": {
+    "stable": "3.0.3",
+    "devel": null,
+    "head": "HEAD",
+    "bottle": false
+  },
+  "urls": {},
+  "revision": 0,
+  "version_scheme": 0,
+  "bottle": {},
+  "keg_only": false,
+  "bottle_disabled": false,
+  "options": [],
+  "build_dependencies": [],
+  "dependencies": [
+    "nodenv"
+  ],
+  "recommended_dependencies": [],
+  "optional_dependencies": [],
+  "uses_from_macos": [],
+  "requirements": [],
+  "conflicts_with": [],
+  "caveats": null,
+  "installed": [],
+  "linked_keg": null,
+  "pinned": false,
+  "outdated": false
+}

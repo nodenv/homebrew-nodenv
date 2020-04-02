@@ -1,0 +1,36 @@
+{
+  "name": "node-build-jxcore",
+  "full_name": "node-build-jxcore",
+  "oldname": null,
+  "aliases": [],
+  "versioned_formulae": [],
+  "desc": "Install JXCore versions",
+  "homepage": "https://github.com/nodenv/node-build-jxcore",
+  "versions": {
+    "stable": "1.0.1",
+    "devel": null,
+    "head": "HEAD",
+    "bottle": false
+  },
+  "urls": {},
+  "revision": 0,
+  "version_scheme": 0,
+  "bottle": {},
+  "keg_only": false,
+  "bottle_disabled": true,
+  "options": [],
+  "build_dependencies": [],
+  "dependencies": [
+    "node-build"
+  ],
+  "recommended_dependencies": [],
+  "optional_dependencies": [],
+  "uses_from_macos": [],
+  "requirements": [],
+  "conflicts_with": [],
+  "caveats": "For `node-build`/`nodenv install` to pick up definitions provided by this plugin,\nensure directory exists in NODE_BUILD_DEFINITIONS:\n    export NODE_BUILD_DEFINITIONS=\"$(brew --prefix)/Cellar/node-build-jxcore/1.0.1/share/node-build\"\n",
+  "installed": [],
+  "linked_keg": null,
+  "pinned": false,
+  "outdated": false
+}

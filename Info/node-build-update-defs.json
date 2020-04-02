@@ -1,0 +1,37 @@
+{
+  "name": "node-build-update-defs",
+  "full_name": "node-build-update-defs",
+  "oldname": null,
+  "aliases": [],
+  "versioned_formulae": [],
+  "desc": "Scrape build definitions from nodejs.org and iojs.org",
+  "homepage": "https://github.com/nodenv/node-build-update-defs",
+  "versions": {
+    "stable": "2.9.4",
+    "devel": null,
+    "head": "HEAD",
+    "bottle": false
+  },
+  "urls": {},
+  "revision": 0,
+  "version_scheme": 0,
+  "bottle": {},
+  "keg_only": false,
+  "bottle_disabled": false,
+  "options": [],
+  "build_dependencies": [],
+  "dependencies": [
+    "node-build",
+    "nodenv"
+  ],
+  "recommended_dependencies": [],
+  "optional_dependencies": [],
+  "uses_from_macos": [],
+  "requirements": [],
+  "conflicts_with": [],
+  "caveats": "For `node-build`/`nodenv install` to pick up definitions written by this plugin,\nensure directory exists in NODE_BUILD_DEFINITIONS:\n    export NODE_BUILD_DEFINITIONS=\"$(brew --prefix)/Cellar/node-build-update-defs/2.9.4/share/node-build\"\n",
+  "installed": [],
+  "linked_keg": null,
+  "pinned": false,
+  "outdated": false
+}

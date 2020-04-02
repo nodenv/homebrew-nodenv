@@ -1,0 +1,37 @@
+{
+  "name": "nodenv-default-packages",
+  "full_name": "nodenv-default-packages",
+  "oldname": null,
+  "aliases": [],
+  "versioned_formulae": [],
+  "desc": "Auto-installs packages for Node installs",
+  "homepage": "https://github.com/nodenv/nodenv-default-packages",
+  "versions": {
+    "stable": "1.0.0",
+    "devel": null,
+    "head": "HEAD",
+    "bottle": false
+  },
+  "urls": {},
+  "revision": 0,
+  "version_scheme": 0,
+  "bottle": {},
+  "keg_only": false,
+  "bottle_disabled": false,
+  "options": [],
+  "build_dependencies": [],
+  "dependencies": [
+    "node-build",
+    "nodenv"
+  ],
+  "recommended_dependencies": [],
+  "optional_dependencies": [],
+  "uses_from_macos": [],
+  "requirements": [],
+  "conflicts_with": [],
+  "caveats": null,
+  "installed": [],
+  "linked_keg": null,
+  "pinned": false,
+  "outdated": false
+}

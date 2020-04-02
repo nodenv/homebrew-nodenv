@@ -1,0 +1,36 @@
+{
+  "name": "nodenv-package-rehash",
+  "full_name": "nodenv-package-rehash",
+  "oldname": null,
+  "aliases": [],
+  "versioned_formulae": [],
+  "desc": "Automatically runs `nodenv rehash`",
+  "homepage": "https://github.com/nodenv/nodenv-package-rehash",
+  "versions": {
+    "stable": "1.4.0",
+    "devel": null,
+    "head": "HEAD",
+    "bottle": false
+  },
+  "urls": {},
+  "revision": 0,
+  "version_scheme": 0,
+  "bottle": {},
+  "keg_only": false,
+  "bottle_disabled": false,
+  "options": [],
+  "build_dependencies": [],
+  "dependencies": [
+    "nodenv"
+  ],
+  "recommended_dependencies": [],
+  "optional_dependencies": [],
+  "uses_from_macos": [],
+  "requirements": [],
+  "conflicts_with": [],
+  "caveats": "Speed up your shell initialization!\nWith this plugin now installed, you can (optionally) configure nodenv to skip rehashing on shell startup.\nIn your shell startup file (.bash_profile, .bashrc or .zshrc), add `--no-rehash` to the `nodenv init` line.\n    eval \"$(nodenv init - --no-rehash)\"\n",
+  "installed": [],
+  "linked_keg": null,
+  "pinned": false,
+  "outdated": false
+}

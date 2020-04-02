@@ -1,0 +1,36 @@
+{
+  "name": "jetbrains-npm",
+  "full_name": "jetbrains-npm",
+  "oldname": null,
+  "aliases": [],
+  "versioned_formulae": [],
+  "desc": "Fix IntelliJ/WebStorm's npm integration under nodenv",
+  "homepage": "https://github.com/nodenv/jetbrains-npm",
+  "versions": {
+    "stable": "1.0.0",
+    "devel": null,
+    "head": "HEAD",
+    "bottle": false
+  },
+  "urls": {},
+  "revision": 0,
+  "version_scheme": 0,
+  "bottle": {},
+  "keg_only": true,
+  "bottle_disabled": false,
+  "options": [],
+  "build_dependencies": [],
+  "dependencies": [
+    "nodenv"
+  ],
+  "recommended_dependencies": [],
+  "optional_dependencies": [],
+  "uses_from_macos": [],
+  "requirements": [],
+  "conflicts_with": [],
+  "caveats": "Configure IntelliJ/WebStorm's Package manager path as:\n  $(brew --prefix)/opt/jetbrains-npm\nAnd ensure `NODENV_ROOT' is set in your JetBrains environment.\n  https://github.com/nodenv/jetbrains-npm#configuration\n",
+  "installed": [],
+  "linked_keg": null,
+  "pinned": false,
+  "outdated": false
+}

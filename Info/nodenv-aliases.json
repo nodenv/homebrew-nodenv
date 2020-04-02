@@ -1,0 +1,36 @@
+{
+  "name": "nodenv-aliases",
+  "full_name": "nodenv-aliases",
+  "oldname": null,
+  "aliases": [],
+  "versioned_formulae": [],
+  "desc": "Create aliases for nodenv Node versions",
+  "homepage": "https://github.com/nodenv/nodenv-aliases",
+  "versions": {
+    "stable": "2.0.2",
+    "devel": null,
+    "head": "HEAD",
+    "bottle": false
+  },
+  "urls": {},
+  "revision": 0,
+  "version_scheme": 0,
+  "bottle": {},
+  "keg_only": false,
+  "bottle_disabled": false,
+  "options": [],
+  "build_dependencies": [],
+  "dependencies": [
+    "nodenv"
+  ],
+  "recommended_dependencies": [],
+  "optional_dependencies": [],
+  "uses_from_macos": [],
+  "requirements": [],
+  "conflicts_with": [],
+  "caveats": null,
+  "installed": [],
+  "linked_keg": null,
+  "pinned": false,
+  "outdated": false
+}
