@@ -15,7 +15,7 @@ jobs:
         mkdir -p Info
         cd Formula
         for formula in *.rb; do
-          brew info --json "$formula" | jq '.[0]' > ../Info/${formula/%rb/json}
+          brew info --json "$formula" | jq '.[0]? // .' > ../Info/${formula/%rb/json}
         done
 
     - uses: stefanzweifel/git-auto-commit-action@v4.1.1
