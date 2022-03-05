@@ -5,8 +5,6 @@ class NodeBuildPrerelease < Formula
   sha256 "d30bf4b3a7398da47ece837bd5e396e0b7f5257126caa2148304ee271956798c"
   head "https://github.com/nodenv/node-build-prerelease.git"
 
-  bottle :unneeded
-
   depends_on "node-build"
 
   def install
