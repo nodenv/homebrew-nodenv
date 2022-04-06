@@ -5,8 +5,6 @@ class NodeBuildJxcore < Formula
   sha256 "1b09594c19bb0627489a2f3e19bd7384087a7212df10720046b36c70e13b2cd4"
   head "https://github.com/nodenv/node-build-jxcore.git"
 
-  bottle :unneeded
-
   depends_on "node-build"
 
   def install
