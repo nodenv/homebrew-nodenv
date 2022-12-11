@@ -12,6 +12,6 @@ class NodenvMan < Formula
   end
 
   test do
-    assert_match /^man$/, shell_output("nodenv commands")
+    assert_match(/^man$/, shell_output("nodenv commands"))
   end
 end

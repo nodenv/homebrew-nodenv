@@ -13,6 +13,6 @@ class NodenvNpmMigrate < Formula
   end
 
   test do
-    assert_match /^migrate$/, shell_output("nodenv commands")
+    assert_match(/^migrate$/, shell_output("nodenv commands"))
   end
 end

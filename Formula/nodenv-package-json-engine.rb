@@ -12,6 +12,6 @@ class NodenvPackageJsonEngine < Formula
   end
 
   test do
-    assert_match /\bpackage-json-engine\b/, shell_output("nodenv hooks version-name")
+    assert_match(/\bpackage-json-engine\b/, shell_output("nodenv hooks version-name"))
   end
 end
