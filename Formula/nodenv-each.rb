@@ -12,6 +12,6 @@ class NodenvEach < Formula
   end
 
   test do
-    assert_match /^each$/, shell_output("nodenv commands")
+    assert_match(/^each$/, shell_output("nodenv commands"))
   end
 end

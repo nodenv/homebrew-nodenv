@@ -12,6 +12,6 @@ class NodenvUpdate < Formula
   end
 
   test do
-    assert_match /^update$/, shell_output("nodenv commands")
+    assert_match(/^update$/, shell_output("nodenv commands"))
   end
 end

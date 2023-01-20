@@ -12,6 +12,6 @@ class NodenvVars < Formula
   end
 
   test do
-    assert_match /^vars$/, shell_output("nodenv commands")
+    assert_match(/^vars$/, shell_output("nodenv commands"))
   end
 end

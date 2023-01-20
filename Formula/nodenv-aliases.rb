@@ -12,6 +12,6 @@ class NodenvAliases < Formula
   end
 
   test do
-    assert_match /^alias$/, shell_output("nodenv commands")
+    assert_match(/^alias$/, shell_output("nodenv commands"))
   end
 end

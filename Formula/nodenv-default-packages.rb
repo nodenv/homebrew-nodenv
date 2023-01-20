@@ -14,6 +14,6 @@ class NodenvDefaultPackages < Formula
   end
 
   test do
-    assert_match /default-packages\.bash/, shell_output("nodenv hooks install")
+    assert_match(/default-packages\.bash/, shell_output("nodenv hooks install"))
   end
 end

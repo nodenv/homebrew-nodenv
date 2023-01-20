@@ -21,7 +21,7 @@ class NodenvPackageRehash < Formula
   end
 
   test do
-    assert_match /^package-hooks$/, shell_output("nodenv commands")
-    assert_match "install-pkg-hooks.bash", shell_output("nodenv hooks install")
+    assert_match(/^package-hooks$/, shell_output("nodenv commands"))
+    assert_match("install-pkg-hooks.bash", shell_output("nodenv hooks install"))
   end
 end
