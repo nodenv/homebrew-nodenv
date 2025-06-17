@@ -1,6 +1,8 @@
-# nodenv/homebrew
+# Homebrew nodenv
 
-This is a [Homebrew Tap](https://docs.brew.sh/Taps) providing formulae for [plugins](https://github.com/nodenv/nodenv/wiki/Plugins) extending [nodenv](https://github.com/nodenv/nodenv).
+This is a [Homebrew Tap](https://docs.brew.sh/Taps)
+providing formulae for [plugins](https://github.com/nodenv/nodenv/wiki/Plugins)
+extending [nodenv](https://github.com/nodenv/nodenv).
 
 <!-- toc -->
 
