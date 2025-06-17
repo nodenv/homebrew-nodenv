@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  lint:
+  audit:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
@@ -17,7 +17,7 @@ jobs:
           brew audit --strict "nodenv/nodenv/$(basename ${formula%.rb})"
         done
 
-  test:
+  test-install:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
@@ -32,3 +32,13 @@ jobs:
         for formula in Formula/*; do
           brew test "nodenv/nodenv/$(basename ${formula%.rb})"
         done
+
+  test:
+    uses: nodenv/.github/.github/workflows/test.yml@v4
+    with: {npm: false}
+    permissions:
+      contents: read
+      packages: read
+      id-token: write
+      security-events: write
+      statuses: write
