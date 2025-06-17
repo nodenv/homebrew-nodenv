@@ -12,6 +12,7 @@ jobs:
     - uses: actions/checkout@v4
     - name: brew audit
       run: |
+        brew tap nodenv/nodenv .
         for formula in Formula/*; do
           brew audit --formula --strict "$(basename ${formula%.rb})"
         done
