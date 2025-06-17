@@ -17,7 +17,7 @@ Or `brew tap nodenv/nodenv` and then `brew install <formula>`.
 
 Or install via URL (which will not receive updates):
 
-```
+```console
 brew install https://raw.githubusercontent.com/nodenv/homebrew-nodenv/master/Formula/<formula>.rb
 ```
 
