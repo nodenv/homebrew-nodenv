@@ -7,7 +7,7 @@ on:
 permissions: {contents: read}
 
 jobs:
-  audit:
+  brew-audit:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
@@ -18,7 +18,7 @@ jobs:
           brew audit --strict "nodenv/nodenv/$(basename ${formula%.rb})"
         done
 
-  test-install:
+  brew-install:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
