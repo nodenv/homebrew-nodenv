@@ -1,7 +1,7 @@
 class JetbrainsNpm < Formula
   desc "Fix IntelliJ/WebStorm's npm integration under nodenv"
   homepage "https://github.com/nodenv/jetbrains-npm"
-  url "https://github.com/nodenv/jetbrains-npm/archive/v1.0.0.tar.gz"
+  url "https://github.com/nodenv/jetbrains-npm/archive/refs/tags/v1.0.0.tar.gz"
   sha256 "4083ab47eed1e614d374f117722628f568de465f6cb0481b2ffc830c2c1c7afe"
   head "https://github.com/nodenv/jetbrains-npm.git"
 
