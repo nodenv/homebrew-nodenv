@@ -10,16 +10,25 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
+    - run: brew tap nodenv/nodenv .
     - name: brew audit
       run: |
-        brew tap nodenv/nodenv .
         for formula in Formula/*; do
-          brew audit --formula --strict "$(basename ${formula%.rb})"
+          brew audit --strict "nodenv/nodenv/$(basename ${formula%.rb})"
         done
 
   test:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
-    - run: brew install Formula/*
-    - run: brew test Formula/*
+    - run: brew tap nodenv/nodenv .
+    - name: brew install
+      run: |
+        for formula in Formula/*; do
+          brew install "nodenv/nodenv/$(basename ${formula%.rb})"
+        done
+    - name: brew test
+      run: |
+        for formula in Formula/*; do
+          brew test "nodenv/nodenv/$(basename ${formula%.rb})"
+        done
