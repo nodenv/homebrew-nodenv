@@ -15,7 +15,7 @@ jobs:
       - name: brew audit
         run: |
           for formula in Formula/*; do
-            brew audit --strict "nodenv/nodenv/$(basename ${formula%.rb})"
+            brew audit --strict "nodenv/nodenv/$(basename "${formula%.rb}")"
           done
 
   brew-install:
@@ -26,12 +26,12 @@ jobs:
       - name: brew install
         run: |
           for formula in Formula/*; do
-            brew install "nodenv/nodenv/$(basename ${formula%.rb})"
+            brew install "nodenv/nodenv/$(basename "${formula%.rb}")"
           done
       - name: brew test
         run: |
           for formula in Formula/*; do
-            brew test "nodenv/nodenv/$(basename ${formula%.rb})"
+            brew test "nodenv/nodenv/$(basename "${formula%.rb}")"
           done
 
   test:
