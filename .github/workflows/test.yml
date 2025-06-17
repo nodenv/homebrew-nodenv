@@ -2,41 +2,41 @@ name: Test
 on:
   push:
   pull_request:
-  schedule: [{cron: '0 0 10 * *'}] # monthly https://crontab.guru/#0_0_10_*_*
+  schedule: [{ cron: "0 0 10 * *" }] # monthly https://crontab.guru/#0_0_10_*_*
   workflow_dispatch:
-permissions: {contents: read}
+permissions: { contents: read }
 
 jobs:
   brew-audit:
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v4
-    - run: brew tap nodenv/nodenv .
-    - name: brew audit
-      run: |
-        for formula in Formula/*; do
-          brew audit --strict "nodenv/nodenv/$(basename ${formula%.rb})"
-        done
+      - uses: actions/checkout@v4
+      - run: brew tap nodenv/nodenv .
+      - name: brew audit
+        run: |
+          for formula in Formula/*; do
+            brew audit --strict "nodenv/nodenv/$(basename ${formula%.rb})"
+          done
 
   brew-install:
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v4
-    - run: brew tap nodenv/nodenv .
-    - name: brew install
-      run: |
-        for formula in Formula/*; do
-          brew install "nodenv/nodenv/$(basename ${formula%.rb})"
-        done
-    - name: brew test
-      run: |
-        for formula in Formula/*; do
-          brew test "nodenv/nodenv/$(basename ${formula%.rb})"
-        done
+      - uses: actions/checkout@v4
+      - run: brew tap nodenv/nodenv .
+      - name: brew install
+        run: |
+          for formula in Formula/*; do
+            brew install "nodenv/nodenv/$(basename ${formula%.rb})"
+          done
+      - name: brew test
+        run: |
+          for formula in Formula/*; do
+            brew test "nodenv/nodenv/$(basename ${formula%.rb})"
+          done
 
   test:
     uses: nodenv/.github/.github/workflows/test.yml@v4
-    with: {npm: false}
+    with: { npm: false }
     permissions:
       contents: read
       packages: read
