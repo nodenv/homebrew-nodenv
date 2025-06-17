@@ -5,12 +5,12 @@ jobs:
   lint:
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v2
     - run: brew audit --strict Formula/*
+    - uses: actions/checkout@v4
 
   test:
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - run: brew install Formula/*
     - run: brew test Formula/*
