@@ -10,7 +10,7 @@ jobs:
   test-bot:
     strategy:
       matrix:
-        os: [ ubuntu-22.04, macos-13, macos-15 ]
+        os: [ubuntu-22.04, macos-13, macos-15]
     runs-on: ${{ matrix.os }}
     permissions:
       actions: read
@@ -44,4 +44,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: bottles_${{ matrix.os }}
-          path: '*.bottle.*'
+          path: "*.bottle.*"
