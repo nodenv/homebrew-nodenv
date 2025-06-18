@@ -1,4 +1,4 @@
-# Homebrew nodenv
+# Nodenv Homebrew Tap
 
 This is a [Homebrew Tap](https://docs.brew.sh/Taps)
 providing formulae for [plugins](https://github.com/nodenv/nodenv/wiki/Plugins)
@@ -17,10 +17,11 @@ extending [nodenv](https://github.com/nodenv/nodenv).
 
 Or `brew tap nodenv/nodenv` and then `brew install <formula>`.
 
-Or install via URL (which will not receive updates):
+Or, in a `brew bundle` `Brewfile`:
 
-```console
-brew install https://raw.githubusercontent.com/nodenv/homebrew-nodenv/main/Formula/<formula>.rb
+```ruby
+tap "nodenv/nodenv"
+brew "<formula>"
 ```
 
 ## Documentation
