@@ -19,9 +19,14 @@ jobs:
       contents: read
       pull-requests: read
     steps:
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@ec9f2d5744a09debf3a187a3f4f675c53b671911 # v2.13.0
+        with:
+          egress-policy: audit
+
       - name: Set up Homebrew
         id: set-up-homebrew
-        uses: Homebrew/actions/setup-homebrew@main
+        uses: Homebrew/actions/setup-homebrew@6c79ae0677a9b0b8046a936b4ada8980885eafb8 # main
         with:
           token: ${{ github.token }}
 
