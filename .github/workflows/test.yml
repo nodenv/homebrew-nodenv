@@ -6,10 +6,9 @@ on:
   workflow_dispatch:
 
 permissions: {}
-
 jobs:
   test:
-    uses: nodenv/.github/.github/workflows/test.yml@v5
+    uses: nodenv/.github/.github/workflows/test.yml@v6
     with: { npm: false }
     permissions:
       contents: read
@@ -21,12 +20,10 @@ jobs:
   brew-audit:
     runs-on: macos-latest
     steps:
-      - name: Harden the runner (Audit all outbound calls)
-        uses: step-security/harden-runner@ec9f2d5744a09debf3a187a3f4f675c53b671911 # v2.13.0
-        with:
-          egress-policy: audit
-
+      - uses: step-security/harden-runner@ec9f2d5744a09debf3a187a3f4f675c53b671911 # v2.13.0
+        with: { egress-policy: audit }
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
       - run: brew tap nodenv/nodenv .
       - name: brew audit
         run: |
@@ -37,12 +34,10 @@ jobs:
   brew-install:
     runs-on: macos-latest
     steps:
-      - name: Harden the runner (Audit all outbound calls)
-        uses: step-security/harden-runner@ec9f2d5744a09debf3a187a3f4f675c53b671911 # v2.13.0
-        with:
-          egress-policy: audit
-
+      - uses: step-security/harden-runner@ec9f2d5744a09debf3a187a3f4f675c53b671911 # v2.13.0
+        with: { egress-policy: audit }
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
       - run: brew tap nodenv/nodenv .
       - name: brew install
         run: |
