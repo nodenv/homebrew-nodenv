@@ -1,8 +1,8 @@
 class NodeBuildPrerelease < Formula
   desc "Install NodeJS prerelease versions"
   homepage "https://github.com/nodenv/node-build-prerelease"
-  url "https://github.com/nodenv/node-build-prerelease/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "d30bf4b3a7398da47ece837bd5e396e0b7f5257126caa2148304ee271956798c"
+  url "https://github.com/nodenv/node-build-prerelease/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "a21b2c611e97c8718908fda9f257c54b23a2f114843b36979fb591a1b736b56d"
   head "https://github.com/nodenv/node-build-prerelease.git"
 
   depends_on "node-build"
