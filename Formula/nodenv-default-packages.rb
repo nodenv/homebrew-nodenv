@@ -1,8 +1,8 @@
 class NodenvDefaultPackages < Formula
   desc "Auto-installs packages for Node installs"
   homepage "https://github.com/nodenv/nodenv-default-packages"
-  url "https://github.com/nodenv/nodenv-default-packages/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "9b8645c11e446e436301c48b12c1a87d68fd6cf4dd03793f0ce79f0d646fb877"
+  url "https://github.com/nodenv/nodenv-default-packages/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "25ce49d41ed8f383dc1aa11e3ac7747765f7b1a8714a0803de720e8c86c87d85"
   head "https://github.com/nodenv/nodenv-default-packages.git"
 
   depends_on "node-build"
