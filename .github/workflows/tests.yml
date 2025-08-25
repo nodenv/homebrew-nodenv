@@ -25,7 +25,7 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@6c79ae0677a9b0b8046a936b4ada8980885eafb8 # main
         with:
           token: ${{ github.token }}
-      - uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
+      - uses: actions/cache@0400d5f644dc74513175e3cd8d07132dd4860809 # v4.2.4
         with:
           path: ${{ steps.set-up-homebrew.outputs.gems-path }}
           key: ${{ matrix.os }}-rubygems-${{ steps.set-up-homebrew.outputs.gems-hash }}
