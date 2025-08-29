@@ -1,5 +1,8 @@
 # Nodenv Homebrew Tap
 
+[![Tests](https://img.shields.io/github/actions/workflow/status/nodenv/homebrew-nodenv/test.yml?label=tests&logo=github)](https://github.com/nodenv/homebrew-nodenv/actions/workflows/test.yml)
+[![brew test-bot](https://img.shields.io/github/actions/workflow/status/nodenv/homebrew-nodenv/test.yml?label=brew%20test-bot&logo=homebrew&logoColor=white)](https://github.com/nodenv/homebrew-nodenv/actions/workflows/tests.yml)
+
 This is a [Homebrew Tap](https://docs.brew.sh/Taps)
 providing formulae for [plugins](https://github.com/nodenv/nodenv/wiki/Plugins)
 extending [nodenv](https://github.com/nodenv/nodenv).
