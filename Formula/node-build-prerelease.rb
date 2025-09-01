@@ -1,5 +1,5 @@
 class NodeBuildPrerelease < Formula
-  desc "Install NodeJS prerelease versions"
+  desc "Provides node-build definitions for Node.js prereleases"
   homepage "https://github.com/nodenv/node-build-prerelease"
   url "https://github.com/nodenv/node-build-prerelease/archive/refs/tags/v2.0.1.tar.gz"
   sha256 "4b3aa2ccb5eeafdcd524f8122099cf77ea60872e2c65f0890a774bf4c4cba41d"
