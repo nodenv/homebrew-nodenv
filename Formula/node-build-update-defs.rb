@@ -1,5 +1,5 @@
 class NodeBuildUpdateDefs < Formula
-  desc "Scrape build definitions from nodejs.org and iojs.org"
+  desc "Generate node-build definitions from nodejs.org"
   homepage "https://github.com/nodenv/node-build-update-defs"
   url "https://github.com/nodenv/node-build-update-defs/archive/refs/tags/v2.11.2.tar.gz"
   sha256 "131f034117727b74030b263108880d50bf72596c7fbeb3b6012ea287049b781b"
