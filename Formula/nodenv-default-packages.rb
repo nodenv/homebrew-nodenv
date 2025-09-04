@@ -3,7 +3,7 @@ class NodenvDefaultPackages < Formula
   homepage "https://github.com/nodenv/nodenv-default-packages"
   url "https://github.com/nodenv/nodenv-default-packages/archive/refs/tags/v1.0.1.tar.gz"
   sha256 "25ce49d41ed8f383dc1aa11e3ac7747765f7b1a8714a0803de720e8c86c87d85"
-  head "https://github.com/nodenv/nodenv-default-packages.git"
+  head "https://github.com/nodenv/nodenv-default-packages.git", branch: "main"
 
   depends_on "node-build"
   depends_on "nodenv"
