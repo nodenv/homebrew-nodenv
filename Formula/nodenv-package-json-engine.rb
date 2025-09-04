@@ -3,7 +3,7 @@ class NodenvPackageJsonEngine < Formula
   homepage "https://github.com/nodenv/nodenv-package-json-engine"
   url "https://github.com/nodenv/nodenv-package-json-engine/archive/refs/tags/v3.0.3.tar.gz"
   sha256 "6cb083415fe41942827f8bc585125fad791903d3fcb2775b89bd80ac64366df4"
-  head "https://github.com/nodenv/nodenv-package-json-engine.git"
+  head "https://github.com/nodenv/nodenv-package-json-engine.git", branch: "main"
 
   depends_on "nodenv"
 

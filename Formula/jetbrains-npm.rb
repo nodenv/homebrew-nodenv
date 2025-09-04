@@ -3,7 +3,7 @@ class JetbrainsNpm < Formula
   homepage "https://github.com/nodenv/jetbrains-npm"
   url "https://github.com/nodenv/jetbrains-npm/archive/refs/tags/v1.0.2.tar.gz"
   sha256 "56762ec4ef2e5b078bfb273fe7d0fc6fed4a7ed28e5ffeacf6bf17a844832c24"
-  head "https://github.com/nodenv/jetbrains-npm.git"
+  head "https://github.com/nodenv/jetbrains-npm.git", branch: "main"
 
   keg_only "this formula is only used by IntelliJ/WebStorm"
 
