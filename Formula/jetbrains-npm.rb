@@ -1,8 +1,8 @@
 class JetbrainsNpm < Formula
   desc "Fix IntelliJ/WebStorm's npm integration under nodenv"
   homepage "https://github.com/nodenv/jetbrains-npm"
-  url "https://github.com/nodenv/jetbrains-npm/archive/refs/tags/v1.0.2.tar.gz"
-  sha256 "56762ec4ef2e5b078bfb273fe7d0fc6fed4a7ed28e5ffeacf6bf17a844832c24"
+  url "https://github.com/nodenv/jetbrains-npm/archive/refs/tags/v1.0.3.tar.gz"
+  sha256 "d2b14ce3fba5b4dfa72e16e3547c332c8e26e88e3a9d6e46d9d4c63110322910"
   head "https://github.com/nodenv/jetbrains-npm.git", branch: "main"
 
   keg_only "this formula is only used by IntelliJ/WebStorm"
