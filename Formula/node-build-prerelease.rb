@@ -1,8 +1,8 @@
 class NodeBuildPrerelease < Formula
   desc "Provides node-build definitions for Node.js prereleases"
   homepage "https://github.com/nodenv/node-build-prerelease"
-  url "https://github.com/nodenv/node-build-prerelease/archive/refs/tags/v2.0.152.tar.gz"
-  sha256 "79d8906d59f38272b21d9588299c5fbc3c564b595ebd39d3816c9ecac2026059"
+  url "https://github.com/nodenv/node-build-prerelease/archive/refs/tags/v2.0.153.tar.gz"
+  sha256 "cbaa37f2eb5086640466ca5ca66329d9aa5f474e987088a0d1287e69a4f759b7"
   head "https://github.com/nodenv/node-build-prerelease.git", branch: "main"
 
   depends_on "node-build"
