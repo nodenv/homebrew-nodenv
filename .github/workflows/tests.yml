@@ -23,7 +23,7 @@ jobs:
       - uses: step-security/harden-runner@9af89fc71515a100421586dfdb3dc9c984fbf411 # v2.19.4
         with: { egress-policy: audit }
       - id: set-up-homebrew
-        uses: Homebrew/actions/setup-homebrew@7f6df1cd36597249cbf9810ff3aeff47edf8243b # main
+        uses: Homebrew/actions/setup-homebrew@1f8e202ffddf94def7f42f6fa3a482e821489f9c # 2026.07.10.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
@@ -32,6 +32,7 @@ jobs:
           key: ${{ matrix.os }}-rubygems-${{ steps.set-up-homebrew.outputs.gems-hash }}
           restore-keys: ${{ matrix.os }}-rubygems-
 
+      - run: brew trust nodenv/nodenv
       - run: brew test-bot --only-cleanup-before
       - run: brew test-bot --only-setup
       - run: brew test-bot --only-tap-syntax
