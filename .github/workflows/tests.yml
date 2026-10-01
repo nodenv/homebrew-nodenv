@@ -30,11 +30,11 @@ jobs:
       # tap-new-github-packages-end
       pull-requests: read
     steps:
-      - uses: step-security/harden-runner@05e31511f85b41b11d1cf0ef85d0992719546e2c # v2.21.0
+      - uses: step-security/harden-runner@e14015d583714f6e62063499dc959a02595150a1 # v2.21.1
         with: { egress-policy: audit }
       - name: Set up Homebrew
         id: set-up-homebrew
-        uses: Homebrew/actions/setup-homebrew@a657b8b0cd35d0f65cce41fce9b24cf054b49869 # 2026.08.24.1
+        uses: Homebrew/actions/setup-homebrew@3cdb78d0f62ad29dd32de765782654f4eedea607 # 2026.08.31.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
